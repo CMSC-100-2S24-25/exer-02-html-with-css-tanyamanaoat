@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Holtwood+One+SC&display=swap');
+
+body {
+    font-family: 'Holtwood One SC';
+    font-size: xx-large;
+    background-image: url("https://img.freepik.com/free-vector/gradient-geometric-design-dark-background_23-2148425667.jpg?t=st=1739254118~exp=1739257718~hmac=d903f4f3fe38e4bb6c0ed250282226b2c65a476bda4efdc996e3b1c0fdb5a1a4&w=1060");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+  h1 {
+    color: rgb(204, 191, 218);
+  }
+  p {
+    color: rgb(191, 141, 157);
+  }
