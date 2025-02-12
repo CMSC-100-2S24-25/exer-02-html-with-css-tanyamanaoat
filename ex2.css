@@ -1,107 +1,231 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* test for commit */
 
 body {
-    font-family: Arial, sans-serif;
-    font-family: 'Holtwood One SC';
-    font-size: xx-large;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
     color: rgb(230, 160, 189);
-    background-image: url("https://img.freepik.com/free-vector/gradient-geometric-design-dark-background_23-2148425667.jpg?t=st=1739254118~exp=1739257718~hmac=d903f4f3fe38e4bb6c0ed250282226b2c65a476bda4efdc996e3b1c0fdb5a1a4&w=1060");
+    background-image: url("https://images.pexels.com/photos/30004057/pexels-photo-30004057/free-photo-of-dynamic-abstract-3d-render-with-vibrant-colors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header section */
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f4f4f4;
-    padding: 10px;
-    text-align: center;
+    background: rgba(244, 244, 244, 0.8); /* Semi-transparent background */
+    padding: 15px 20px;
     border-bottom: 2px solid #ccc;
 }
 
-.logo {
-    background: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+.header-logo {
+    max-width: 150px; /* Limits the logo's width to prevent it from getting too large */
+    height: auto; /* Keeps the aspect ratio of the logo */
+    object-fit: contain; /* Ensures the logo fits within its container without distortion */
+    margin-right: 20px; /* Adds spacing between the logo and the navigation bar */
 }
 
+/* Navigation Bar */
 .nav-bar {
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
+    color: #333;
+    display: flex; /* Ensures that the nav items are in a row */
+    gap: 20px; /* Adds space between each nav item */
+}
+
+.nav-bar a {
+    text-decoration: none; /* Removes underlines from links */
+    color: #333; /* Sets color for the navigation items */
+}
+
+.nav-bar a:hover {
+    color: rgb(106, 5, 84); /* Changes color when hovering over links */
 }
 
 .container {
     width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
 }
 
+/* Featured photo */
 .featured-photo .photo {
     width: 100%;
-    height: 200px;
-    background: lightgray;
+    height: 300px; /* Can adjust this based on desired image height */
+    background-color: lightgray;
     border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.projects h2, .skills h2, .autobiography h2 {
+.featured-photo .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without stretching */
+    object-position: center; /* Ensures the image is centered */
+}
+
+/* Projects Section */
+.projects h2 {
     text-align: center;
-    margin: 15px 0;
+    margin: 30px 0;
+    font-size: 2em;
 }
 
-.project-list {
+.projects {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures that images wrap properly on smaller screens */
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures that images wrap properly on smaller screens */
+    margin: 0 auto; /* Centers the container itself within the page */
+    max-width: 1200px; /* Optionally limit the width of the project section */
 }
 
 .project {
-    width: 23%;
-    height: 100px;
+    width: 48%; /* Each project will take 48% of the container's width */
     background: lightgray;
     border: 3px solid black;
+    display: flex;
+    flex-direction: column; /* Stack the image and description vertically */
+    align-items: center; /* Center the image and description horizontally */
+    justify-content: center; /* Center the content vertically */
+    box-sizing: border-box;
+    padding: 20px; /* Adds padding around the image and description */
 }
 
+.project img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    object-position: center; /* Keeps the image centered in the container */
+}
+
+/* Project descriptions outside the flexbox */
+.project-description {
+    padding: 10px;
+}
+
+.project-description h3 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.project-description p {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Skills & Autobiography Section */
 .skills-autobiography {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .skills, .autobiography {
-    width: 48%;
+    width: 48%; 
+}
+
+.skills h2, .autobiography h2 {
+    text-align: center;
+    font-size: 1.8em;
 }
 
 .content-box {
     width: 100%;
-    height: 100px;
+    height: 150px;
     background: lightgray;
     border: 2px solid black;
+    margin-top: 10px;
 }
 
+/* Footer Section */
 .footer {
     display: flex;
     justify-content: space-between;
-    background: #f4f4f4;
-    padding: 10px;
-    margin-top: 20px;
-    border-top: 2px solid #ccc;
+    background: rgba(174, 85, 116, 0.5); /* Semi-transparent footer */
+    padding: 20px;
+    margin-top: 40px;
 }
 
 .footer-logo {
-    width: 80px;
-    height: 50px;
-    background: lightgray;
-    border: 2px solid black;
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+    background: rgb(177, 104, 135);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .footer-content {
     flex-grow: 1;
     padding-left: 20px;
+    font-size: 1em;
+    color: #ffe9e9;
+}
+
+.footer-content p {
+    margin: 5px 0;
 }
 
 .back-to-top {
-    color: blue;
+    color: rgb(106, 5, 84);
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-autobiography {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills, .autobiography {
+        width: 100%;
+    }
+
+    /* On smaller screens, the projects should stack vertically */
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%; /* Shrink the width on small screens */
+        height: 250px;
+        margin-bottom: 20px; /* Adds spacing between stacked projects */
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .back-to-top {
+        margin-top: 10px;
+    }
 }

@@ -4,47 +4,84 @@
     <link rel="stylesheet" href="ex2.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Layout</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">LOGO</div>
-        <nav class="nav-bar">Logo and Navigation Bar</nav>
-    </header>
+        <img src="images/logo.png" class="header-logo">
+        <nav class="nav-bar">
+            <a href="#home">Home</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>    
+    
 
     <main class="container">
         <section class="featured-photo">
-            <div class="photo"></div>
+            <div class="photo">
+                <img src="images/myphoto.jpg">
+            </div>
         </section>
 
         <section class="projects">
             <h2>Previous Projects</h2>
-            <div class="project-list">
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
+            <div class="project">
+                <img src="images/project1.png" alt="Shooting Game in Java">
+            </div>
+            <div class="project-description">
+                <h3>Shooting Game in Java</h3>
+                <p>This project is a simple 2D shooting game developed using Java. It features basic gameplay mechanics, including player movement, shooting, and collision detection.</p>
+            </div>
+        
+            <div class="project">
+                <img src="images/project2.png" alt="Restaurant Menu Reserver">
+            </div>
+            <div class="project-description">
+                <h3>Restaurant Menu Reserver</h3>
+                <p>This project allows users to browse a restaurant's menu and reserve their favorite food from the menu. Built with web technologies, it features a responsive design and user-friendly interface.</p>
             </div>
         </section>
+        
 
         <section class="skills-autobiography">
             <div class="skills">
                 <h2>Skills</h2>
-                <div class="content-box"></div>
+                <p>
+                    I am proficient in a variety of programming languages and technologies, including:
+                </p>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Dart</li>
+                    <li>Java</li>
+                </ul>
+                <p>
+                    I have applied these languages in various projects, from web development to software programming and application development, ensuring I can adapt to different environments and challenges.
+                </p>
             </div>
+            
             <div class="autobiography">
                 <h2>Autobiography</h2>
-                <div class="content-box"></div>
-            </div>
+                <p>
+                    Hello, my name is Tanya Marinelle G. Manaoat. I graduated from the University of the Philippines Los Baños with a degree in Computer Science. Throughout my academic journey, I developed a deep interest in programming and software development, which led me to explore various languages and technologies.
+                </p>
+                <p>
+                    During my time at the university, I was exposed to a wide range of subjects that honed my problem-solving skills and provided a strong foundation in computer science. I have since applied my knowledge to projects involving Python, C++, JavaScript, and many more, building solutions that address real-world challenges.
+                </p>
+            </div>            
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-logo"></div>
+        <img src="images/logo.png" class="footer-logo">
         <div class="footer-content">
-            <p>Footer Contents</p>
-            <p>Logo, Address / Contact Information, and Personal Website</p>
+            <p>About the Developer</p>
+            <p>Tanya Marinelle G. Manaoat</p>
+            <p>Contact: tgmanaoat@up.edu.ph / 09626931873</p>
             <p>Copyright Information</p>
             <a href="#" class="back-to-top">Back to Top</a>
         </div>
