@@ -7,7 +7,7 @@ Tanya Marinelle G. Manaoat
 BS Computer Science
 
 ### Website Link:
-https://cmsc-100-2s24-25/github.io/exer-02-html-with-css-tanyamanaoat/
+https://cmsc-100-2s24-25.github.io/exer-02-html-with-css-tanyamanaoat/#projects
 
 ### Steps on how to create GitHub page:
 1. Open Github repository and go to settings.
